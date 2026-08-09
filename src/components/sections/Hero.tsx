@@ -120,12 +120,7 @@ const Hero = () => {
               size="lg"
               variant="ghost"
               className="gap-2 px-6"
-              onClick={() =>
-                window.open(
-                  "https://customer-assets.emergentagent.com/job_81392408-789d-407b-998d-de010bbca7a6/artifacts/wrie5bl0_DiptenduBarman.pdf",
-                  "_blank",
-                )
-              }
+              onClick={() => window.open(personalInfo.resumeUrl, "_blank")}
             >
               <Download className="w-4 h-4" />
               Download Resume
@@ -173,6 +168,7 @@ const Hero = () => {
         className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10"
       >
         <button
+          type="button"
           onClick={() => scrollToSection("#about")}
           className="flex flex-col items-center gap-2 text-muted-foreground hover:text-cyan-500 transition-colors"
         >

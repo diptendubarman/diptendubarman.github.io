@@ -23,6 +23,7 @@ const Contact = () => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [result, setResult] = useState("");
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
@@ -35,8 +36,25 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission (mock)
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    const formDataObject = new FormData();
+
+    formDataObject.append("access_key", "6ba22abb-3227-46af-b5b3-ea17f9f86354");
+    formDataObject.append("name", formData.name);
+    formDataObject.append("email", formData.email);
+    formDataObject.append("message", formData.message);
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formDataObject,
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("Thank you for reaching out. I'll get back to you soon.");
+    } else {
+      setResult("Oops! Something went wrong. Please try again later.");
+    }
 
     setIsSubmitting(false);
     setIsSubmitted(true);
@@ -183,9 +201,7 @@ const Contact = () => {
                   <h4 className="text-xl font-semibold text-foreground mb-2">
                     Message Sent!
                   </h4>
-                  <p className="text-muted-foreground">
-                    Thank you for reaching out. I'll get back to you soon.
-                  </p>
+                  <p className="text-muted-foreground">{result}</p>
                 </motion.div>
               ) : (
                 <div className="space-y-6">

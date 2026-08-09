@@ -70,14 +70,14 @@ const About = () => {
             <div className="grid grid-cols-2 gap-4">
               <div className="p-6 bg-background rounded-xl border border-border hover:border-cyan-500/30 transition-colors">
                 <Code className="w-8 h-8 text-cyan-500 mb-3" />
-                <h4 className="text-3xl font-bold text-foreground">5+</h4>
+                <h4 className="text-3xl font-bold text-foreground">7+</h4>
                 <p className="text-sm text-muted-foreground">
                   Years Experience
                 </p>
               </div>
               <div className="p-6 bg-background rounded-xl border border-border hover:border-cyan-500/30 transition-colors">
                 <Briefcase className="w-8 h-8 text-cyan-500 mb-3" />
-                <h4 className="text-3xl font-bold text-foreground">20+</h4>
+                <h4 className="text-3xl font-bold text-foreground">25+</h4>
                 <p className="text-sm text-muted-foreground">
                   Projects Delivered
                 </p>

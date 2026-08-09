@@ -18,7 +18,7 @@ export const personalInfo: PersonalInfo = {
   location: "Kolkata, India",
   linkedin: "https://in.linkedin.com/in/diptendu-barman",
   github: "https://github.com/diptendubarman",
-  resumeUrl: "/resume.pdf",
+  resumeUrl: "/Resume_DiptenduBarman.pdf",
   heroText:
     "Driving digital transformation through user-centered design and scalable engineering.",
 };
@@ -50,7 +50,7 @@ export const skills: Skills = {
   },
   backend: {
     title: "Backend",
-    items: ["Node.js", "NestJS", "FastAPI", "Express.js", "Python"],
+    items: ["Node.js", "NestJS", "FastAPI", "Express.js", "Python", "Go"],
   },
   databases: {
     title: "Databases",

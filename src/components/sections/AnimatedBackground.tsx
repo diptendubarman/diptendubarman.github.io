@@ -36,7 +36,10 @@ type CodeBracketProps = {
 const techKeywords: string[] = [
   "React",
   "Node.js",
+  "Python",
   "FastAPI",
+  "Go",
+  "NestJS",
   "Docker",
   "PostgreSQL",
   "GraphQL",
@@ -45,10 +48,10 @@ const techKeywords: string[] = [
   "AWS",
   "CI/CD",
   "MongoDB",
-  "NestJS",
   "Kafka",
   "WebSocket",
   "REST API",
+  "RAG",
 ];
 
 /* ---------- Components ---------- */

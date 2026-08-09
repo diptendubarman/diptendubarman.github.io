@@ -157,6 +157,7 @@ const Projects = () => {
           <div className="flex flex-wrap items-center justify-center gap-2 p-1 bg-muted/50 rounded-xl">
             {categories.map((category) => (
               <button
+                type="button"
                 key={category}
                 onClick={() => setActiveCategory(category)}
                 className="relative px-4 py-2 text-sm font-medium rounded-lg transition-colors duration-200"
