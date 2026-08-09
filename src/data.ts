@@ -16,7 +16,7 @@ export const personalInfo: PersonalInfo = {
   email: "dip.codes9@gmail.com",
   phone: "+91 8350051926",
   location: "Kolkata, India",
-  linkedin: "https://in.linkedin.com/in/diptendu-barman",
+  linkedin: "https://in.linkedin.com/in/diptendubarman",
   github: "https://github.com/diptendubarman",
   resumeUrl: "/Resume_DiptenduBarman.pdf",
   heroText:
