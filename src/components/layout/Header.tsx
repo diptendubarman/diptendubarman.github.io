@@ -148,6 +148,7 @@ const Header = () => {
             <div className="px-4 py-4 space-y-2">
               {navLinks.map((link) => (
                 <button
+                  type="button"
                   key={link.name}
                   onClick={() => scrollToSection(link.href)}
                   className="block w-full text-left px-4 py-3 text-base font-medium text-muted-foreground hover:text-foreground hover:bg-accent rounded-lg transition-colors"
