@@ -24,7 +24,7 @@ export const personalInfo: PersonalInfo = {
 };
 
 export const aboutMe: AboutMe = {
-  summary: `Team Lead Full Stack Developer with 5+ years of experience building scalable systems across Healthcare, E-Commerce, Security, and HR Tech domains. Expert in React, Vue.js, Node.js, NestJS, and FastAPI with strong proficiency in DevOps practices, CI/CD pipelines, and cloud infrastructure.`,
+  summary: `Team Lead Full Stack Developer with 7+ years of experience building scalable systems across Healthcare, E-Commerce, Security, and HR Tech domains. Expert in React, Vue.js, Node.js, NestJS, and FastAPI with strong proficiency in DevOps practices, CI/CD pipelines, and cloud infrastructure.`,
   description: `I drive digital transformation through user-centered design and innovative front-end and back-end engineering, delivering seamless, scalable, and engaging applications. I spearhead cross-functional collaboration & Agile practices to accelerate product delivery timelines, optimize workflow, and foster a high-performance engineering culture.`,
   highlights: [
     "Led engineering teams through complex technical challenges",
